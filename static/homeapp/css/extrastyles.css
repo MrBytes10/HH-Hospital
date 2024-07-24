@@ -1,0 +1,179 @@
+.top-bar {
+    background-color: white;
+    color: blue;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.hospital-name {
+    font-size: 18px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hospital-tagline {
+    font-size: 12px;
+    font-style:italic;
+    font-weight: 200;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.appointments {
+    text-align: right;
+}
+
+.navbar {
+    background-color: rgb(196, 191, 191);
+    block-size: auto;
+}
+
+.navbar-nav .nav-link {
+    color: blue;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5rem 0.7rem;
+    transition: color 0.3s ease; /* This adds a smooth transition effect */
+}
+
+/* Add this new rule for the hover effect */
+.navbar-nav .nav-link:hover {
+    color: blue; /* This is a blue color, you can adjust it as needed */
+    }
+
+    /*second page from homepage*/
+    .alternative-treatment, .integrative-medicine {
+        padding: 50px 0;
+      }
+      
+      .alternative-treatment {
+        background-color: #e6f3f7;
+      }
+      
+      .integrative-medicine {
+        background-color: #f8d7da;
+      }
+      
+      .treatment-info, .medicine-info {
+        padding: 20px;
+      }
+      
+      h2 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+      
+      p {
+        color: #666;
+        margin-bottom: 20px;
+      }
+      
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+      
+      .btn-primary:hover {
+        background-color: #0056b3;
+      }
+      
+      .img-fluid {
+        max-width: 100%;
+        height: auto;
+      }
+
+      /* Page3 of the homepage*/
+      .treat-root-cause, .integrative-healthcare {
+        padding: 50px 0;
+    }
+    
+    .treat-root-cause {
+        background-color: #f0f0f0; /* Light gray background */
+    }
+    
+    .integrative-healthcare {
+        background-color: #fff; /* White background */
+    }
+    
+    .treatment-info, .healthcare-info {
+        padding: 20px;
+    }
+    
+    h2 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    p {
+        color: #666;
+        margin-bottom: 15px;
+    }
+    
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    
+
+      
+      /* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .top-bar .row > div {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .appointments {
+        text-align: center;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+/*page2 of homepage*/
+    .alternative-treatment .row, .integrative-medicine .row {
+        flex-direction: column-reverse;
+      }
+      
+      .col-md-6 {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+      
+      .treatment-info, .medicine-info {
+        text-align: center;
+      }
+
+      /*page3 of homepage*/
+      .treat-root-cause .row, .integrative-healthcare .row {
+        flex-direction: column-reverse;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .treatment-info, .healthcare-info {
+        text-align: center;
+    }
+/*Page4 of the homepage*/
+
+
+}

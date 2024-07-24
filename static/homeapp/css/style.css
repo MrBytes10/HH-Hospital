@@ -7711,9 +7711,15 @@ h1, h2, h3, h4, h5,
       color: #2f89fc; }
 
 .ftco-intro {
-  color: #fff; }
+  color: #fff;
+  /*extrastyles*/
+  
+}
+
   .ftco-intro .container {
-    margin-top: -100px; }
+    margin-top: -100px; 
+  }
+
     @media (min-width: 768px) {
       .ftco-intro .container {
         margin-top: -100px; } }

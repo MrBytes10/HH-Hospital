@@ -4,7 +4,7 @@
 <html lang="en">
 
 <head>
-    <title>DentaCare - Free Bootstrap 4 Template by Colorlib</title>
+    <title>HH NON-SURGICAL HOSPITAL </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,13 +22,104 @@
     <link rel="stylesheet" href="{% static 'homeapp/css/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'homeapp/css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'homeapp/css/style.css' %}">
+    <!--extra links-->>
+    <link rel="stylesheet" href="{% static 'homeapp/css/extrastyles.css' %}">
+
 </head>
 
 <body>
-    <!-- Navbar starts here -->
+    <!-- Top bar starts here #on extrastyle-->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-6">
+                    <div class="logo-container">
+                        <img src="{% static 'homeapp/images/hhlogo.jpg' %}" alt="HH-Hospital Logo" class="img-fluid">
+                        <div>
+                            <div class="hospital-name">HH NON-SURGICAL HOSPITAL</div>
+                            <div class="hospital-tagline">WITHOUT SURGERY, TREAT BODY'S HEALING SYSTEM</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="appointments">
+                        <strong>Appointments</strong><br>
+                        Nairobi: +254 (0) 705 700 777<br>
+                        Mombasa: +254 (0) 784 700 700
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Top bar ends here #on extrastyle-->
+
+    <!-- Navbar starts here #on extrastyle-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Why Non-Surgical</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">What Benefits</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Intergarive Medicine</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Training Center</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">International Patients</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Careers</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END of nav #on extrastyle-->
+
+
+
+
+
+    <!-- Top bar starts here
+    <div class="top-bar">
+        <div class="container">
+            <div class="contact-info">
+                <div>
+                    <img src="{% static 'homeapp/images/hhlogo.jpg' %}" alt="HH-Hospital Logo" style="height: 40px;">
+                    <span>HH NON-SURGICAL HOSPITAL <br> WITHOUT SURGERY,TREAT BODY'S HEALING SYSTEM </span>
+                </div>
+                <div>
+                    <a href="mailto:hosp@nbihosp.org"><i class="icon-envelope"></i> Appointments</a>
+                    <br>
+                    <span><i class="icon-phone"></i> Nairobi: (+254) 705700777
+                        Mombasa: (+254) 784 700 700</span>
+                    <br>
+                    <span><i class="icon-phone"></i> Nairobi: (+254) 705700777
+                        Mombasa: (+254) 784 700 700</span>
+                    <br>
+
+
+
+                </div>
+                <div class="social-icons">
+                    <a href="#"> Appointments</a>
+                    <a href="#"><i class="icon-twitter"></i></a>
+                    <a href="#"><i class="icon-youtube"></i></a>
+                    <a href="#"><i class="icon-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+     Top bar ends here -->
+
+
+    <!-- Navbar starts here
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Denta<span>Care</span></a>
+            <a class="navbar-brand" href="index.html"> <span>HH </span>NON-SURGICAL HOSPITAL</a> 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
@@ -36,81 +127,234 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item active"> <a href="index.html" class="nav-link"> <b>Home </b> </a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                     <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Training Center</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">International Patients</a></li>
                     <li class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></li>
-                    <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li class="nav-item"><a href="blog.html" class="nav-link">Careers</a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
                     <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal"
                             data-target="#modalRequest"><span>Make an Appointment</span></a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- END nav -->
+
+   END of nav -->
+
+
+    <!-- Navbar2 starts here
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <span>HH </span>NON-SURGICAL HOSPITAL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"> <a href="index.html" class="nav-link"> <b>Home </b> </a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Training Center</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="services.html" class="nav-link">International Patients</a></li>
+                    <li class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></li>
+    <li class="nav-item"><a href="blog.html" class="nav-link">Careers</a></li>
+    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
+    <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal"
+            data-target="#modalRequest"><span>Make an Appointment</span></a></li>
+    </ul>
+    </div>
+    </div>
+    </nav>
+
+    END of nav2
+    -->
+
 
     <!-- homepage pg1 Section-->
     <section class="home-slider owl-carousel">
         <!-- slider1-->
-        <div class="slider-item" style="background-image: url({% static 'homeapp/images/bg_1.jpg' %});">
+        <div class="slider-item"
+            style="background-image: url({% static 'homeapp/images/home11-slice-body-is-brilliant.png' %});">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text align-items-center" data-scrollax-parent="true">
                     <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Modern
-                            Dentistry in a Calm and Relaxed Environment</h1>
-                        <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A small river
-                            named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Why
+                            Non-Surgical Treatment</h1>
+                        <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Human Body has
+                            the amazing capacity for Self-Healing.
+                            When we get a cut, sprain, broken bone and many
+                            other cases, our bodies have a remarkable capacity to
+                            heal themselves.
+                            At HH, our treatment modalities are designed to
+                            recover and strengthen your body's natural self-healing ability. </p>
                         <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#"
-                                class="btn btn-primary px-4 py-3">Make an Appointment</a></p>
+                                class="btn btn-primary px-4 py-3">Read More</a></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- slider2-->
-        <div class="slider-item" style="background-image: url({% static 'homeapp/images/bg_2.jpg' %});">
+        <div class="slider-item" style="background-image: url({% static 'homeapp/images/home2-WHOTCM.jpeg' %});">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text align-items-center" data-scrollax-parent="true">
                     <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Modern Achieve
-                            Your Desired Perfect Smile</h1>
-                        <p class="mb-4">A small river named Duden flows by their place and supplies it with the
-                            necessary regelialia.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3">Make an Appointment</a></p>
+                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">World Health
+                            Organization (WHO)
+                            Traditional Medicine Global Summit 2023
+                        </h1>
+                        <p class="mb-4">Global partners commit to advance evidence-based traditional, complementary and
+                            Integrative Medicine </p>
+                        <p><a href="#" class="btn btn-primary px-4 py-3">Read more</a></p>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- slider3 below-->
-        <div class="slider-item" style="background-image: url({% static 'homeapp/images/bg_2.jpg' %});">
+        <div class="slider-item" style="background-image: url({% static 'homeapp/images/home3-WChair.jpg' %});">
             <div class="overlay"></div>
             <div class="container">
                 <div class="row slider-text align-items-center" data-scrollax-parent="true">
                     <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Augastino</h1>
-                        <p class="mb-4">Get in touch with us at 0742125032.</p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3">Make an Appointment</a></p>
+                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">What Benefits:
+                        </h1>
+                        <p class="mb-4">
+                        <ul>
+                            <li>Less Risky</li>
+                            <li>Short Hospital Stay</li>
+                            <li>Cost-Effective</li>
+                            <li>Less Pain and Discomfort</li>
+                            <li>Quick Recovery Time</li>
+                            <li>Boost the Self-Healing Power of the Body</li>
+                            <li>Less Trauma</li>
+
+                        </ul>
+
+
+                        </p>
+                        <p><a href="#" class="btn btn-primary px-4 py-3">Read more</a></p>
                     </div>
                 </div>
             </div>
         </div>
 
     </section>
+    <!-- Page two of homepage #extrastyles-->
+
+    <!--Discover Alternative Treatment #extrastyles-->
+    <section class="alternative-treatment">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="treatment-info">
+                        <h2>Discover Alternative Treatment</h2>
+                        <p>Discover an alternative path to healing without the need for invasive surgery; our
+                            non-surgical treatments provide a safer, more effective alternative for addressing diseases,
+                            promoting faster recovery, and empowering your body's natural self-healing mechanisms.</p>
+                        <a href="#integrative-medicine" class="btn btn-primary">Read more about Integrative Medicine</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'homeapp/images/INTEGRATIVE_MEDICINE.jpg' %}" alt="Scientists in lab"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Integrative Medicine #extrastyles-->
+    <section id="integrative-medicine" class="integrative-medicine">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{% static 'homeapp/images/home2-WHOTCM.jpeg' %}" alt="WHO conference" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="medicine-info">
+                        <h2>Integrative Medicine</h2>
+                        <p>Integrative medicine can be described as a practice that "Cherry Picks" the best and
+                            scientifically supported therapies of both systems.</p>
+                        <p>The ultimate goal: to treat the patients better, through the use of safe, effective and
+                            less-invasive interventions whenever possible.</p>
+                        <a href="#" class="btn btn-primary">Read more about WHO initiative</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- page3 of the homepage-->
+    <!-- Treat Root Cause, Not Only Symptoms # otherstyles-->
+    <section class="treat-root-cause">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="treatment-info">
+                        <h2 class="treatRoot">Treat Root Cause, Not Only Symptoms</h2>
+                        <p>At HH Non-Surgical Hospital, we focus on root cause not only symptoms. We employ techniques
+                            that are carefully curated to complement the body's biological processes.
+                            <br>
+                            These may include targeted interventions, rehabilitative exercises, and lifestyle
+                            modifications designed to support and amplify the body's natural healing responses.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'homeapp/images/treatRootCause.jpg' %}" alt="Patients on medical equipment"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- With Team, Focus on Whole Person # otherstyles-->
+    <section class="integrative-healthcare">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{% static 'homeapp/images/withTeam.jpg' %}" alt="Healthcare team" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <div class="healthcare-info">
+                        <h2 class="withTeam">With Team, Focus on Whole Person</h2>
+                        <p>Integrative Healthcare focuses on the whole person.<br>
+                            Integrative medicine includes all providers of integrative medicine - working in equal
+                            partnership for the better of the patient - nurses, medical doctors, naturopathic doctors,
+                            chiropractic doctors, acupuncture and oriental medicine doctors and many more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Emergency Section-->
+    <!--
     <section class="ftco-intro">
         <div class="container">
             <div class="row no-gutters">
+                
                 <div class="col-md-3 color-1 p-4">
                     <h3 class="mb-4">Emergency Cases</h3>
-                    <p>A small river named Duden flows by their place and supplies</p>
-                    <span class="phone-number">+ (123) 456 7890</span>
+                    <p>We handle emergency issues swiftly. Please reach out to us and get urgent response.</p>
+                    <span class="phone-number">Nairobi:+254 (0) 705700777 </span>
+                    <br>
+                    <span class="phone-number">Mombasa:+254 (0) 784700700 </span>
                 </div>
-                <div class="col-md-3 color-2 p-4">
+           
+    
+            <div class="col-md-6 color-2 p-9">
                     <h3 class="mb-4">Opening Hours</h3>
                     <p class="openinghours d-flex">
                         <span>Monday - Friday</span>
@@ -125,6 +369,8 @@
                         <span>10:00 - 16:00</span>
                     </p>
                 </div>
+        
+                
                 <div class="col-md-6 color-3 p-4">
                     <h3 class="mb-2">Make an Appointment</h3>
                     <form action="#" class="appointment-form">
@@ -181,10 +427,11 @@
                             <input type="submit" value="Make an Appointment" class="btn btn-primary">
                         </div>
                     </form>
-                </div>
+                </div> 
             </div>
         </div>
     </section>
+    -->
 
     <!-- Our Service Keeps you Smile Services Section-->
     <section class="ftco-section ftco-services">
@@ -822,7 +1069,13 @@
     </section>
 
     <!--Map Section -->
-    <div id="map"></div>
+    <div id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021130.2596417464!2d35.70179482015944!3d-1.3008236044026054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11655c311541%3A0x9dd769ac1c10b897!2sNairobi%20County!5e0!3m2!1sen!2ske!4v1721857809603!5m2!1sen!2ske"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
 
 
     <!--Footer Section-->
@@ -889,12 +1142,12 @@
                         <h2 class="ftco-heading-2">Office</h2>
                         <div class="block-23 mb-3">
                             <ul>
-                                <li><span class="icon icon-map-marker"></span><span class="text">203 Fake St. Mountain
-                                        View, San Francisco, California, USA</span></li>
-                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+2 392 3929
-                                            210</span></a></li>
+                                <li><span class="icon icon-map-marker"></span><span class="text">Nairobi,Kenya <br>
+                                        Mombasa, Kenya</span></li>
+                                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+254 (0)
+                                            705700777 </span></a></li>
                                 <li><a href="#"><span class="icon icon-envelope"></span><span
-                                            class="text">info@yourdomain.com</span></a></li>
+                                            class="text">hh.africahealth@gmail.com</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -995,6 +1248,11 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
     <script src="{% static 'homeapp/js/google-map.js' %}"></script>
     <script src="{% static 'homeapp/js/main.js' %}"></script>
+
+    <!--extra js-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
 </body>
 
