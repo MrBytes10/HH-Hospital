@@ -22,9 +22,9 @@
     <link rel="stylesheet" href="{% static 'homeapp/css/flaticon.css' %}">
     <link rel="stylesheet" href="{% static 'homeapp/css/icomoon.css' %}">
     <link rel="stylesheet" href="{% static 'homeapp/css/style.css' %}">
-    <!--extra links-->>
     <link rel="stylesheet" href="{% static 'homeapp/css/extrastyles.css' %}">
-
+    <!--extra links-->
+    
 </head>
 
 <body>
@@ -116,7 +116,7 @@
      Top bar ends here -->
 
 
-    <!-- Navbar starts here
+    <!-- Navbar2 starts here 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="index.html"> <span>HH </span>NON-SURGICAL HOSPITAL</a> 
@@ -144,39 +144,7 @@
         </div>
     </nav>
 
-   END of nav -->
-
-
-    <!-- Navbar2 starts here
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"> <span>HH </span>NON-SURGICAL HOSPITAL</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
-            </button>
-
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"> <a href="index.html" class="nav-link"> <b>Home </b> </a></li>
-                    <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Training Center</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">Testimonials</a></li>
-                    <li class="nav-item"><a href="services.html" class="nav-link">International Patients</a></li>
-                    <li class="nav-item"><a href="doctors.html" class="nav-link">Doctors</a></li>
-    <li class="nav-item"><a href="blog.html" class="nav-link">Careers</a></li>
-    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-
-    <li class="nav-item cta"><a href="contact.html" class="nav-link" data-toggle="modal"
-            data-target="#modalRequest"><span>Make an Appointment</span></a></li>
-    </ul>
-    </div>
-    </div>
-    </nav>
-
-    END of nav2
-    -->
+   END of nav2 -->
 
 
     <!-- homepage pg1 Section-->
@@ -188,8 +156,8 @@
             <div class="container">
                 <div class="row slider-text align-items-center" data-scrollax-parent="true">
                     <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Why
-                            Non-Surgical Treatment</h1>
+                    <div class="slider1"> 
+                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Why Non-Surgical Treatment</h1>
                         <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Human Body has
                             the amazing capacity for Self-Healing.
                             When we get a cut, sprain, broken bone and many
@@ -199,28 +167,30 @@
                             recover and strengthen your body's natural self-healing ability. </p>
                         <p data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><a href="#"
                                 class="btn btn-primary px-4 py-3">Read More</a></p>
+                    
                     </div>
+                </div>
                 </div>
             </div>
         </div>
 
-        <!-- slider2-->
-        <div class="slider-item" style="background-image: url({% static 'homeapp/images/home2-WHOTCM.jpeg' %});">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row slider-text align-items-center" data-scrollax-parent="true">
-                    <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-                        <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">World Health
-                            Organization (WHO)
-                            Traditional Medicine Global Summit 2023
-                        </h1>
-                        <p class="mb-4">Global partners commit to advance evidence-based traditional, complementary and
-                            Integrative Medicine </p>
-                        <p><a href="#" class="btn btn-primary px-4 py-3">Read more</a></p>
-                    </div>
+<!-- slider2-->
+<div class="slider-item" style="background-image: url({% static 'homeapp/images/home2-WHOTCM.jpeg' %});">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row slider-text align-items-center" data-scrollax-parent="true">
+            <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax="properties: { translateY: '70%' }">
+                <div class="slider2">
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">World Health Organization (WHO) Traditional Medicine Global Summit 2023
+                    </h1>
+                    <p class="mb-4">Global partners commit to advance evidence-based traditional, complementary and Integrative Medicine</p>
+                    <p><a href="#" class="btn btn-primary px-4 py-3">Read more</a></p>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
 
         <!-- slider3 below-->
         <div class="slider-item" style="background-image: url({% static 'homeapp/images/home3-WChair.jpg' %});">
@@ -228,6 +198,7 @@
             <div class="container">
                 <div class="row slider-text align-items-center" data-scrollax-parent="true">
                     <div class="col-md-6 col-sm-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="slider3">
                         <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">What Benefits:
                         </h1>
                         <p class="mb-4">
@@ -246,18 +217,20 @@
                         </p>
                         <p><a href="#" class="btn btn-primary px-4 py-3">Read more</a></p>
                     </div>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
+
     <!-- Page two of homepage #extrastyles-->
 
     <!--Discover Alternative Treatment #extrastyles-->
     <section class="alternative-treatment">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row alternative-treatment-row">
+                <div class="col-md-6 treatment-info-col">
                     <div class="treatment-info">
                         <h2>Discover Alternative Treatment</h2>
                         <p>Discover an alternative path to healing without the need for invasive surgery; our
@@ -266,13 +239,14 @@
                         <a href="#integrative-medicine" class="btn btn-primary">Read more about Integrative Medicine</a>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 treatment-image-col">
                     <img src="{% static 'homeapp/images/INTEGRATIVE_MEDICINE.jpg' %}" alt="Scientists in lab"
-                        class="img-fluid">
+                        class="img-fluid treatment-image">
                 </div>
             </div>
         </div>
     </section>
+              
 
     <!--Integrative Medicine #extrastyles-->
     <section id="integrative-medicine" class="integrative-medicine">
@@ -284,9 +258,9 @@
                 <div class="col-md-6">
                     <div class="medicine-info">
                         <h2>Integrative Medicine</h2>
-                        <p>Integrative medicine can be described as a practice that "Cherry Picks" the best and
+                        <p>Integrative medicine can be described as a practice that <b>"Cherry Picks"</b> the best and
                             scientifically supported therapies of both systems.</p>
-                        <p>The ultimate goal: to treat the patients better, through the use of safe, effective and
+                        <p> <b>The ultimate goal:</b> to treat the patients better, through the use of safe, effective and
                             less-invasive interventions whenever possible.</p>
                         <a href="#" class="btn btn-primary">Read more about WHO initiative</a>
                     </div>
@@ -296,7 +270,7 @@
     </section>
 
     <!-- page3 of the homepage-->
-    <!-- Treat Root Cause, Not Only Symptoms # otherstyles-->
+    <!-- Treat Root Cause, Not Only Symptoms # extrastyles-->
     <section class="treat-root-cause">
         <div class="container">
             <div class="row">
@@ -312,13 +286,14 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="{% static 'homeapp/images/treatRootCause.jpg' %}" alt="Patients on medical equipment"
-                        class="img-fluid">
+                    <img src="{% static 'homeapp/images/treatRootCause.jpg' %}" alt="Patients on medical equipment"     class="img-fluid">
                 </div>
             </div>
         </div>
     </section>
-    <!-- With Team, Focus on Whole Person # otherstyles-->
+
+
+    <!-- With Team, Focus on Whole Person # extrastyles-->
     <section class="integrative-healthcare">
         <div class="container">
             <div class="row">
@@ -433,7 +408,7 @@
     </section>
     -->
 
-    <!-- Our Service Keeps you Smile Services Section-->
+    <!-- Our Service Keeps you Smile Services Section
     <section class="ftco-section ftco-services">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
@@ -493,54 +468,11 @@
                 </div>
             </div>
         </div>
-        <div class="container-wrap mt-5">
-            <div class="row d-flex no-gutters">
-                <div class="col-md-6 img" style="background-image: url({% static 'homeapp/images/about-2.jpg' %});">
-                </div>
-                <div class="col-md-6 d-flex">
-                    <div class="about-wrap">
-                        <div class="heading-section heading-section-white mb-5 ftco-animate">
-                            <h2 class="mb-2">Dentacare with a personal touch</h2>
-                            <p>A small river named Duden flows by their place and supplies it with the necessary
-                                regelialia.</p>
-                        </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-check2"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Well Experience Dentist</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-check2"></span>
-                            </div>
-                            <div class="text">
-                                <h3>High Technology Facilities</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                        <div class="list-services d-flex ftco-animate">
-                            <div class="icon d-flex justify-content-center align-items-center">
-                                <span class="icon-check2"></span>
-                            </div>
-                            <div class="text">
-                                <h3>Comfortable Clinics</h3>
-                                <p>Far far away, behind the word mountains, far from the countries Vokalia and
-                                    Consonantia, there live the blind texts.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
 
-    <!-- Doctors/experts  Meet OurExperienced Team Section-->
+        End of Services-->
+
+    <!-- Doctors/experts  Meet OurExperienced Team Section
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
@@ -637,16 +569,17 @@
             </div>
         </div>
     </section>
+    -->
 
-    <!-- Achievements Section-->
+    <!-- Achievements Section
     <section class="ftco-section ftco-counter img" id="section-counter"
         style="background-image: url({% static 'homeapp/images/bg_1.jpg' %});" data-stellar-background-ratio="0.5">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-md-3 aside-stretch py-5">
                     <div class=" heading-section heading-section-white ftco-animate pr-md-4">
-                        <h2 class="mb-3">Achievements</h2>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                        <h3 class="mb-3">Achievements </h3>
+                        <p>This is.
                         </p>
                     </div>
                 </div>
@@ -689,8 +622,10 @@
             </div>
         </div>
     </section>
+End of Achievements Section -->
 
-    <!-- Pricing Section-->
+<!--
+ Pricing Section
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
@@ -771,39 +706,40 @@
             </div>
         </div>
     </section>
+End of Pricing Section-->
 
-    <!--Newsletter Section -->
-    <section class="ftco-section-parallax">
-        <div class="parallax-img d-flex align-items-center">
-            <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                        <h2>Subcribe to our Newsletter</h2>
-                        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
-                            there live the blind texts. Separated they live in</p>
-                        <div class="row d-flex justify-content-center mt-5">
-                            <div class="col-md-8">
-                                <form action="#" class="subscribe-form">
-                                    <div class="form-group d-flex">
-                                        <input type="text" class="form-control" placeholder="Enter email address">
-                                        <input type="submit" value="Subscribe" class="submit px-3">
+        <!--Newsletter Section
+            <section class="ftco-section-parallax">
+                <div class="parallax-img d-flex align-items-center">
+                    <div class="container">
+                        <div class="row d-flex justify-content-center">
+                            <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                                <h2>Subcribe to our Newsletter</h2>
+                                <p>Discover the benefits of non-surgical healing and stay updated on our latest treatments and health tips by subscribing to our newsletter.</p>
+                                <div class="row d-flex justify-content-center mt-5">
+                                    <div class="col-md-8">
+                                        <form action="#" class="subscribe-form">
+                                            <div class="form-group d-flex">
+                                                <input type="text" class="form-control" placeholder="Enter email address">
+                                                <input type="submit" value="Subscribe" class="submit px-3">
+                                            </div>
+                                        </form>
                                     </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+            </section>
+        -->
 
     <!--Testimonials Section -->
     <section class="ftco-section testimony-section bg-light">
         <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
+            <div class="row justify-content-center mb-1 pb-1">
                 <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">Testimony</h2>
-                    <span class="subheading">Our Happy Customer Says</span>
+                    <h2 class="mb-2">Testimonials</h2>
+                    <span class="subheading">SOME OF OUR CLIENTS STORIES</span>
                 </div>
             </div>
             <div class="row justify-content-center ftco-animate">
@@ -812,52 +748,52 @@
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
                                 <div class="user-img mb-5"
-                                    style="background-image: url({% static 'homeapp/images/person_1.jpg' %})">
+                                    style="background-image: url({% static 'homeapp/images/karolina.jpg' %})">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                 </div>
                                 <div class="text text-center">
-                                    <p class="mb-5">Even the all-powerful Pointing has no control about the blind texts
-                                        it is an almost unorthographic life One day however a small line of blind text
-                                        by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-                                    <p class="name">Dennis Mmoja</p>
-                                    <span class="position">Marketing Manager</span>
+                                    <p class="mb-5">&quot I came to HH Non-Surgical Hospital after struggling with chronic back pain for years. The non-invasive treatments and holistic approach provided by the team were nothing short of miraculous. Within a few weeks, I experienced significant relief and could return to my daily activities without pain. I am forever grateful for the compassionate care and innovative therapies at HH Hospital.
+                                        &quot</p>
+                                    <p class="name">— Sarah K.</p>
+                                    <span class="position">Nairobi, Kenya </span>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
                                 <div class="user-img mb-5"
-                                    style="background-image: url({% static 'homeapp/images/person_2.jpg' %})">
+                                    style="background-image: url({% static 'homeapp/images/james2.jpg' %})">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                 </div>
                                 <div class="text text-center">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Dennis Bosch</p>
-                                    <span class="position">Interface Designer</span>
+                                    <p class="mb-5">"HH Non-Surgical Hospital truly exceeded my expectations. After a severe sports injury, I was hesitant about undergoing surgery. The expert team at HH offered a comprehensive rehabilitation program that not only accelerated my recovery but also strengthened my body's natural healing mechanisms. I am now back on the field, stronger than ever, thanks to their exceptional care."
+                                       </p>
+                                    <p class="name"> — James M.</p>
+                                    <span class="position">Mombasa, Kenya</span>
                                 </div>
                             </div>
                         </div>
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
                                 <div class="user-img mb-5"
-                                    style="background-image: url({% static 'homeapp/images/person_3.jpg' %})">
+                                    style="background-image: url({% static 'homeapp/images/lucy1.jpg' %})">
                                     <span class="quote d-flex align-items-center justify-content-center">
                                         <i class="icon-quote-left"></i>
                                     </span>
                                 </div>
                                 <div class="text text-center">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Dennis Marvey</p>
-                                    <span class="position">UI Designer</span>
+                                    <p class="mb-5">"When I was diagnosed with a chronic condition, I feared a life of constant medication and potential surgeries. HH Non-Surgical Hospital provided an alternative that focused on the root cause of my issues rather than just the symptoms. The integrative treatments and personalized care plan improved my health remarkably. I highly recommend HH Hospital to anyone seeking a holistic approach to healing."
+                                        </p>
+                                    <p class="name">— Lucy N.</p>
+                                    <span class="position">Nairobi, Kenya</span>
                                 </div>
                             </div>
                         </div>
+                        <!--
                         <div class="item">
                             <div class="testimony-wrap p-4 pb-5">
                                 <div class="user-img mb-5"
@@ -890,13 +826,14 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!--Gallery Section -->
+    <!--Gallery Section 
     <section class="ftco-gallery">
         <div class="container-wrap">
             <div class="row no-gutters">
@@ -935,8 +872,83 @@
             </div>
         </div>
     </section>
+    end of Gallery section-->
+    <!-- Useful Links/Information About Integrative Medicine Section -->
+<section class="useful-links">
+    <div class="container">
+        <div class="row justify-content-center mb-1">
+            <div class="col-md-12 text-center">
+                <h2 class="mb-0">Useful Links to Information About Integrative Medicine</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="info-card">
+                    <img src="{% static 'homeapp/images/usefulLinks1.jpg' %}" alt="WHO Traditional Medicine Global Summit 2023" class="img-fluid mb-3">
+                    <h3>WHO Traditional Medicine Global Summit 2023</h3>
+                    <a href="https://www.who.int/news/item/19-08-2023-global-partners-commit-to-advance-evidence-based-traditional--complementary-and-integrative-medicine" target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="info-card">
+                    <img src="{% static 'homeapp/images/usefulLinks2.png' %}" alt="World Health Organization" class="img-fluid mb-3">
+                    <h3>WHO Integrative Health Services Dept</h3>
+                    <p>Traditional, Complementary and Integrative Medicine (TCI)</p>
+                    <a href="https://www.who.int/teams/integrated-health-services/traditional-complementary-and-integrative-medicine" target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="info-card">
+                    <img src="{% static 'homeapp/images/usefulLinks3.jpg' %}" alt="WHO Global Traditional Medicine Centre" class="img-fluid mb-3">
+                    <h3>WHO Global Traditional Medicine Centre (GTMC)</h3>
+                    <p>Global Traditional Medicine Centre collaborations</p>
+                    <a href="https://www.who.int/news/item/21-03-2024-charting-an-evidence-based-roadmap-for-who-global-traditional-medicine-centre-collaborations" target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-3 mb-4">
+                <div class="info-card">
+                    <img src="{% static 'homeapp/images/U-Maryland.jpg' %}" alt="University of Maryland School of Medicine" class="img-fluid mb-3">
+                    <h3>University of Maryland Center for Integrative Medicine</h3>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="info-card">
+                    <img src="{% static 'homeapp/images/johns_hopkins_logo.jpg' %}" alt="Johns Hopkins Medicine" class="img-fluid mb-3">
+                    <h3>Johns Hopkins Medicine</h3>
+                    <a href="https://www.hopkinsmedicine.org/health/wellness-and-prevention/integrative-medicine" target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="info-card">
+                    <img src="{% static 'homeapp/images/stanford_logo.jpg' %}" alt="Stanford Medicine" class="img-fluid mb-3">
+                    <h3>Stanford University Integrative Medicine Center</h3>
+                    <a href="https://stanfordhealthcare.org/medical-clinics/integrative-medicine-center.html" target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+            </div>
+            <div class="col-md-3 mb-4">
+                <div class="info-card">
+                    <img src="{% static 'homeapp/images/royal_london_hospital_logo.jpg' %}" alt="The Royal London Hospital for Integrated Medicine" class="img-fluid mb-3">
+                    <h3>The Royal London Hospital for Integrated Medicine</h3>
+                    <a href="https://www.uclh.nhs.uk/our-services/our-hospitals/royal-london-hospital-integrated-medicine" target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1 mb-1>
+            <div class="col-md-3">
+                <div class="info-card">
+                    <img src="{% static 'homeapp/images/nih_logo.jpg' %}" alt="National Center for Complementary and Integrative Health" class="img-fluid mb-3">
+                    <h3>U.S. Department of Health and Human Services</h3>
+                    <h4>National Center for Complementary and Integrative Health</h4>
+                    <a href="https://www.nccih.nih.gov/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!--Latest Blog Section -->
+    <!--Latest Blog Section
     <section class="ftco-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-3">
@@ -1004,81 +1016,88 @@
         </div>
     </section>
 
-    <!-- DentaCare Procedure & High Quality Services Section -->
-    <section class="ftco-quote">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 pr-md-5 aside-stretch py-5 choose">
-                    <div class="heading-section heading-section-white mb-5 ftco-animate">
-                        <h2 class="mb-2">DentaCare Procedure &amp; High Quality Services</h2>
-                    </div>
-                    <div class="ftco-animate">
-                        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost
-                            unorthographic life One day however a small line of blind text by the name of Lorem Ipsum
-                            decided to leave for the far World of Grammar. Because there were thousands of bad Commas,
-                            wild Question Marks and devious Semikoli</p>
-                        <ul class="un-styled my-5">
-                            <li><span class="icon-check"></span>Consectetur adipisicing elit</li>
-                            <li><span class="icon-check"></span>Adipisci repellat accusamus</li>
-                            <li><span class="icon-check"></span>Tempore reprehenderit vitae</li>
-                        </ul>
-                    </div>
+    End of latest blog section -->
+
+        <!--Map Section -->
+    <div id="mymaps">
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <div class="map-container">
+                    <h4>Nairobi Branch</h4>
+                    <iframe
+                        width="100%"
+                        height="250"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.364608379825!2d36.799728920985324!3d-1.2681032268991939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f173c0a1f9de7%3A0xad2c84df1f7f2ec8!2sWestlands%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1721994752891!5m2!1sen!2ske" allowfullscreen>
+                    </iframe>
+                    
                 </div>
-                <div class="col-md-6 py-5 pl-md-5">
-                    <div class="heading-section mb-5 ftco-animate">
-                        <h2 class="mb-2">Get a Free Quote</h2>
-                    </div>
-                    <form action="#" class="ftco-animate">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Full Name">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Phone">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Website">
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea name="" id="" cols="30" rows="7" class="form-control"
-                                        placeholder="Message"></textarea>
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <input type="submit" value="Get a Quote" class="btn btn-primary py-3 px-5">
-                                </div>
-                            </div>
-                        </div>
-                    </form>
+            </div>
+            <div class="col-md-6">
+                <div class="map-container">
+                    <h4>Mombasa Branch</h4>
+                    <iframe
+                        width="100%"
+                        height="250"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.8929203948496!2d39.69847487334868!3d-4.042268444845938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18401303c3b7508f%3A0xa49db09492af647d!2sDiani%20sea%20resort!5e0!3m2!1sen!2ske!4v1721994221715!5m2!1sen!2ske" allowfullscreen>
+                    </iframe>
+                    
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+  
+<!--FOOTER SECTION-->
+<footer class="ftco-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="{% static 'homeapp/images/hhlogo.jpg' %}" alt="HH International Ltd Logo" class="footer-logo">
+                <p>HH International Ltd</p>
+                <p>Nairobi: +254 (0) 705 700 777</p>
+                <p>Mombasa: +254 (0) 784 700 700</p>
+                <p>info@www.</p>
+            </div>
+            <div class="col-md-3">
+                <h3>International Patients</h3>
+                <ul>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Integrative Medicine</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">What Benefits</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
 
-    <!--Map Section -->
-    <div id="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1021130.2596417464!2d35.70179482015944!3d-1.3008236044026054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f11655c311541%3A0x9dd769ac1c10b897!2sNairobi%20County!5e0!3m2!1sen!2ske!4v1721857809603!5m2!1sen!2ske"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="col-md-3">
+                <h3>Training Center</h3>
+                <ul>
+                    <li><a href="#">Join HH Team</a></li>
+                    <li><a href="#">Job Vacancy</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">Partnership</a></li>
+                    <li><a href="#">Join Partners</a></li>
+                    <li><a href="#">Media Request</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+        </div>
 
     </div>
+</footer>
+<!--end of footer section-->
 
 
-    <!--Footer Section-->
+    <!--Footer Section
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">
             <div class="row mb-5">
@@ -1156,28 +1175,22 @@
             <div class="row">
                 <div class="col-md-12 text-center">
 
-                    <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template
-                        is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
-                            target="_blank">Colorlib</a>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </p>
-                </div>
+               </div>
             </div>
         </div>
     </footer>
+-->
 
 
 
-    <!-- loader -->
+    <!-- loader- the circle to show page loading -->
     <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
                 stroke="#F96D00" />
         </svg></div>
 
-    <!-- Modal -->
+    <!-- Modal just for the make appointment pop-up-->
     <div class="modal fade" id="modalRequest" tabindex="-1" role="dialog" aria-labelledby="modalRequestLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -1253,6 +1266,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 
 </body>
 

@@ -1,6 +1,6 @@
 .top-bar {
     background-color: white;
-    color: blue;
+    color:#0056b3;
     padding: 10px 0;
     font-size: 14px;
 }
@@ -32,36 +32,186 @@
     text-align: right;
 }
 
-.navbar {
-    background-color: rgb(196, 191, 191);
-    block-size: auto;
+.navbar-light .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link {
+    color: black !important;
+    
 }
 
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: blue !important;
+}
+
+.navbar {
+    background-color:rgb(135, 228, 228);
+    block-size: auto;
+    color: black;
+}
+/*
 .navbar-nav .nav-link {
-    color: blue;
+
+    color: black;
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0.5rem 0.7rem;
-    transition: color 0.3s ease; /* This adds a smooth transition effect */
+    transition: color 0.1s ease; /* This adds a smooth transition effect 
 }
+*/
 
 /* Add this new rule for the hover effect */
+/*
 .navbar-nav .nav-link:hover {
-    color: blue; /* This is a blue color, you can adjust it as needed */
-    }
+  color: blue; /* This is a blue color, you can adjust it as needed
+  }
+  */
+/*Sliders Text*/
+.slider1 {
+  background-color: rgba(40, 100, 100, 0.8) !important; /* Darker, more opaque background */
+  color: white !important; /* Ensure text color is white */
+  font-weight: 600; /* Normal font weight */
+  position: relative; /* Change to relative positioning */
+  padding: 20px; /* Add some padding */
+  margin-top: 30px; /* Use margin instead of absolute positioning */
+  margin-left: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
+      /* Add these lines to set specific box dimensions */
+      width: 700px;  /* Or whatever width you prefer */
+      min-height: 300px; /* Or whatever height you prefer */
+}
 
-    /*second page from homepage*/
-    .alternative-treatment, .integrative-medicine {
+/* Ensure headings are visible */
+.slider1 h1 {
+  color: white !important;
+  font-weight: 700 !important; /* Bold */
+}
+
+/* Ensure paragraphs are visible */
+.slider1 p {
+  color: white !important;
+  font-weight: 400 !important; /* Normal */
+}
+/*Slider1 end*/
+
+/* Slider2 CSS */
+
+.slider2 {
+  background-color: rgba(255, 255, 255, 0.8) !important; /* Transparent white background */
+  color: black !important; /* Black text color */
+  font-weight: 600; /* Normal font weight */
+  position: relative; /* Change to relative positioning */
+  padding: 20px; /* Add some padding */
+  margin-top: 30px; /* Use margin instead of absolute positioning */
+  margin-left: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
+  /* Add these lines to set specific box dimensions */
+  width: 700px;  /* Or whatever width you prefer */
+  min-height: 300px; /* Or whatever height you prefer */
+}
+
+/* Ensure headings are visible */
+.slider2 h1 {
+  color: black !important;
+  font-weight: 700 !important; /* Bold */
+}
+
+/* Ensure paragraphs are visible */
+.slider2 p {
+  color: black !important;
+  font-weight: 400 !important; /* Normal */
+}
+
+
+/*Slider3 css*/
+
+.slider3 {
+  background-color:rgba(130, 91, 91, 0.8) !important; /* Darker, more opaque background */
+  color: white !important; /* Ensure text color is white */
+  font-weight: 600 !important; /* Normal font weight */
+  position: relative; /* Change to relative positioning */
+  padding: 20px; /* Add some padding */
+  margin-top: 30px; /* Use margin instead of absolute positioning */
+  margin-left: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
+      /* Add these lines to set specific box dimensions */
+      width: 700px;  /* Or whatever width you prefer */
+      min-height: 300px; /* Or whatever height you prefer */
+}
+
+/* Ensure headings are visible */
+.slider3 h1 {
+  color: white !important;
+  font-weight: 700 !important; /* Bold */
+}
+
+/* Ensure paragraphs are visible */
+.slider3 p {
+  color: white !important;
+  font-weight: 400 !important; /* Normal */
+}
+
+/*Sliders Text CSS end*/
+
+
+  /*second page from homepage*/
+/*section1 page2*/
+.alternative-treatment {
+  padding: 50px 0;
+  background-color: #e6f3f7;
+}
+
+.alternative-treatment-row {
+  display: flex;
+  align-items: stretch;
+}
+
+.treatment-info-col, .treatment-image-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.treatment-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.treatment-image {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .alternative-treatment-row {
+      flex-direction: column;
+  }
+
+  .treatment-image-col {
+      order: -1;
+  }
+
+  .treatment-image {
+      min-height: 300px;
+  }
+}
+/*section1 ends here*/
+
+
+
+
+
+    .integrative-medicine {
         padding: 50px 0;
       }
-      
-      .alternative-treatment {
-        background-color: #e6f3f7;
-      }
-      
+         
       .integrative-medicine {
-        background-color: #f8d7da;
+        background-color: #e6f3f7;
       }
       
       .treatment-info, .medicine-info {
@@ -98,82 +248,285 @@
         height: auto;
       }
 
-      /* Page3 of the homepage*/
-      .treat-root-cause, .integrative-healthcare {
-        padding: 50px 0;
-    }
-    
-    .treat-root-cause {
-        background-color: #f0f0f0; /* Light gray background */
-    }
-    
-    .integrative-healthcare {
-        background-color: #fff; /* White background */
-    }
-    
-    .treatment-info, .healthcare-info {
-        padding: 20px;
-    }
-    
-    h2 {
-        color: #333;
-        margin-bottom: 20px;
-    }
-    
-    p {
-        color: #666;
-        margin-bottom: 15px;
-    }
-    
-    .img-fluid {
-        max-width: 100%;
-        height: auto;
-    }
-    
-    
+  /* Page3 of the homepage*/
+.treat-root-cause {
+  display: flex;
+  flex-direction: column; /* Ensure container is full height */
+}
+
+.container {
+  flex-grow: 1; /* Make container expand to fill available height */
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col-md-6 {
+  flex: 1; /* Equal width for both columns */
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center content */
+  align-items: flex-start; /* Align content to the left */
+}
+
+.image-column {
+  background-color: #e6f3f7; /* Temporary placeholder for image */
+}
+
+
+/*Useful links section*/
+/* Useful Links Section Styles */
+.useful-links {
+  padding: 10px 10px;
+  background-color: #e6f3f7;
+}
+
+.useful-links h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.useful-links .info-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s ease;
+}
+
+.useful-links .info-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.useful-links .info-card img {
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.useful-links h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.useful-links h4 {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 10px;
+}
+
+.useful-links p {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-bottom: 15px;
+}
+
+.useful-links a {
+  margin-top: auto;
+  display: inline-block;
+  padding: 8px 15px;
+  background-color:white;
+  color:#007bff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.useful-links a:hover {
+  background-color: #007bff;
+    color:white;
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .useful-links h2 {
+      font-size: 2rem;
+  }
+
+  .useful-links .info-card {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .useful-links {
+      padding: 30px 0;
+  }
+
+  .useful-links h2 {
+      font-size: 1.8rem;
+  }
+
+  .useful-links .info-card {
+      padding: 15px;
+  }
+
+  .useful-links h3 {
+      font-size: 1.1rem;
+  }
+
+  .useful-links h4 {
+      font-size: 0.9rem;
+  }
+
+  .useful-links p {
+      font-size: 0.85rem;
+  }
+
+  .useful-links a {
+      padding: 6px 12px;
+      font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .useful-links h2 {
+      font-size: 1.5rem;
+  }
+
+  .useful-links .info-card img {
+      max-height: 120px;
+  }
+
+  .useful-links h3 {
+      font-size: 1rem;
+  }
+
+  .useful-links h4 {
+      font-size: 0.85rem;
+  }
+
+  .useful-links p {
+      font-size: 0.8rem;
+  }
+
+  .useful-links a {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+  }
+}
+
+
+  /*Map Section */
+      #mymaps{
+        background-color:black;
+      }
+        .map-container {
+          margin-bottom: 10px;
+          margin-left: 10px;
+      }
+
+      .map-container h4 {
+          margin-bottom: 10px;
+          margin-left: 10px;
+          color: white;
+      }
+
+      .map-container iframe {
+          border-radius: 4px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+
+/*FOOTER SECTION styling*/
+  .ftco-footer {
+      background-color: #2a7d8c;
+      color: white;
+      padding: 20px 0;
+  }
+  
+  .ftco-footer .footer-logo {
+      max-width: 100px;
+      margin-bottom: 15px;
+  }
+  
+  .ftco-footer h3 {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+  
+  .ftco-footer ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  .ftco-footer ul li {
+      margin-bottom: 10px;
+  }
+  
+  .ftco-footer a {
+      color: white;
+      text-decoration: none;
+  }
+  
+  .ftco-footer a:hover {
+      text-decoration: underline;
+      color:white;
+      background-color: #007bff;
+  }
+  
+  @media (max-width: 768px) {
+      .ftco-footer .col-md-3 {
+          margin-bottom: 30px;
+      }
+      
+      .ftco-footer .col-md-6 {
+          margin-bottom: 30px;
+      }
+  }
+/*end of FOOTER SECTION styling*/
 
       
       /* Responsive adjustments */
 
-@media (max-width: 768px) {
-    .top-bar .row > div {
-        text-align: center;
-        margin-bottom: 10px;
-    }
-    .appointments {
-        text-align: center;
-    }
-    .navbar-nav {
-        text-align: center;
-    }
-/*page2 of homepage*/
-    .alternative-treatment .row, .integrative-medicine .row {
-        flex-direction: column-reverse;
-      }
-      
-      .col-md-6 {
-        width: 100%;
-        margin-bottom: 30px;
-      }
-      
-      .treatment-info, .medicine-info {
-        text-align: center;
-      }
+            @media (max-width: 768px) {
+                .top-bar .row > div {
+                    text-align: center;
+                    margin-bottom: 10px;
+                }
+                .appointments {
+                    text-align: center;
+                }
+              /* .navbar-nav {
+                    text-align: center;
+                } */
+            /*page2 of homepage*/
+                  
+                  .col-md-6 {
+                    width: 100%;
+                    margin-bottom: 30px;
+                  }
+                  
+                  .treatment-info, .medicine-info {
+                    text-align: center;
+                  }
 
-      /*page3 of homepage*/
-      .treat-root-cause .row, .integrative-healthcare .row {
-        flex-direction: column-reverse;
-    }
+                  /*page3 of homepage*/
+                  .treat-root-cause .row, .integrative-healthcare .row {
+                    flex-direction: column-reverse;
+                }
 
-    .col-md-6 {
-        width: 100%;
-        margin-bottom: 30px;
-    }
+                .col-md-6 {
+                    width: 100%;
+                    margin-bottom: 30px;
+                }
 
-    .treatment-info, .healthcare-info {
-        text-align: center;
-    }
-/*Page4 of the homepage*/
+                .treatment-info, .healthcare-info {
+                    text-align: center;
+                }
+            /*Page4 of the homepage*/
 
 
-}
+            }

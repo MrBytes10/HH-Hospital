@@ -7565,15 +7565,44 @@ h1, h2, h3, h4, h5,
           @media (max-width: 991.98px) {
             .owl-carousel.home-slider .slider-item .slider-text h1 {
               font-size: 40px; } }
-        .owl-carousel.home-slider .slider-item .slider-text p {
+
+      .owl-carousel.home-slider .slider-item .slider-text p {
           font-size: 20px;
           line-height: 1.5;
           font-weight: 300;
-          color: rgba(255, 255, 255, 0.8); }
-          .owl-carousel.home-slider .slider-item .slider-text p strong {
+          color: black; }
+          
+          /* Slider2 CSS */
+.slider2 {
+  background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+  color: black !important; /* Black text color */
+  font-weight: 600; /* Normal font weight */
+  position: relative; /* Change to relative positioning */
+  padding: 20px; /* Add some padding */
+  margin-top: 30px; /* Use margin instead of absolute positioning */
+  margin-left: 50px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
+  /* Add these lines to set specific box dimensions */
+  width: 700px;  /* Or whatever width you prefer */
+  min-height: 300px; /* Or whatever height you prefer */
+}
+
+/* Ensure headings are visible */
+.slider2 h1 {
+  color: black;
+  font-weight: 700; /* Bold */
+}
+
+/* Ensure paragraphs are visible */
+.slider2 p {
+  color: black;
+  font-weight: 400; /* Normal */
+}
+
+        .owl-carousel.home-slider .slider-item .slider-text p strong {
             font-weight: 700; }
-            .owl-carousel.home-slider .slider-item .slider-text p strong a {
-              color: #fff; }
+           .owl-carousel.home-slider .slider-item .slider-text p strong a {
+              color: black; } 
         .owl-carousel.home-slider .slider-item .slider-text .breadcrumbs {
           text-transform: uppercase;
           font-size: 13px;
@@ -8481,16 +8510,16 @@ textarea.form-control {
       font-size: 28px; } }
 
 .heading-section.heading-section-white .subheading {
-  color: rgba(255, 255, 255, 0.9); }
+  color: rgba(255, 255, 255); }
 
 .heading-section.heading-section-white h2 {
   font-size: 30px;
-  background: #fff;
+  background:#0c5460;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .heading-section.heading-section-white p {
-  color: rgba(255, 255, 255, 0.9); }
+  color: rgba(255, 255, 255); }
 
 .img,
 .blog-img,
