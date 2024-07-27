@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
+from pathlib import Path
+import dj_database_url
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -75,13 +77,19 @@ WSGI_APPLICATION = 'hh_hospital.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
+#original db but changed for hosting 
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
                 #'NAME': BASE_DIR / 'db.sqlite3',
         'NAME': os.path.join(BASE_DIR, "db.sqlite3"),
     }
-}
+}"""
+
+#db made for hosting is below here
+DATABASES= {
+    "default": dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    }
 
 
 # Password validation
@@ -122,6 +130,8 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'static'),
     ]
+#for hosting
+MEDIA_URL = 'media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
