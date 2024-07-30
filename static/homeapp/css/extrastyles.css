@@ -3,6 +3,8 @@
     color:#0056b3;
     padding: 10px 0;
     font-size: 22px;
+        /* topbar height*/
+  height: 85px; /* or any specific pixel value */
 }
 
 .logo-container {
@@ -57,11 +59,15 @@
 .navbar {
   font-family: Calibri, "Segoe UI", Arial, sans-serif;
   font-size: 13px;
-    background-color:rgb(17, 164, 222, 0.9);
-    block-size: auto;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 600;
+  background-color: rgb(74, 170, 165);
+  block-size: auto;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0px !important;
+    
+    /* Navbar width*/
+  height: 38px; /* or any specific pixel value */
 }
 
 /*Sliders Text*/
@@ -81,14 +87,14 @@
 .slider1 {
   background-color: rgba(40, 100, 100, 0.8) !important; /* Darker, more opaque background */
   color: white !important; /* Ensure text color is white */
-  padding: 2px !important; /* Add some padding */
+  padding: 3px !important; /* Add some padding */
   position:absolute !important;
   font-weight: 600; /* Normal font weight */
   /*position: absolute; /* Changed to absolute positioning */
   max-width: 600px;
   width: 90%; /* Responsive width */
   max-height: fit-content;
-  margin-bottom: 13% !important; /* Adjust this value to move it up or down */
+  bottom: 20% !important; /* Adjust this value to move it up or down */
   left: 10%; /* Adjust this value to move it left or right */
   
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
