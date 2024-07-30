@@ -81,14 +81,14 @@
 .slider1 {
   background-color: rgba(40, 100, 100, 0.8) !important; /* Darker, more opaque background */
   color: white !important; /* Ensure text color is white */
-  padding: 5px; /* Add some padding */
+  padding: 2px !important; /* Add some padding */
   position:absolute !important;
   font-weight: 600; /* Normal font weight */
   /*position: absolute; /* Changed to absolute positioning */
   max-width: 600px;
   width: 90%; /* Responsive width */
   max-height: fit-content;
-  margin-bottom: 5% !important; /* Adjust this value to move it up or down */
+  margin-bottom: 13% !important; /* Adjust this value to move it up or down */
   left: 10%; /* Adjust this value to move it left or right */
   
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -114,6 +114,7 @@
 .slider1 p {
   color: white !important;
   font-weight: 400 !important; /* Normal */
+  font-size: 14px !important;
 }
 /*Slider1 end*/
 
@@ -199,9 +200,11 @@
   background-color: #007bff;
   border-color: #007bff;
   color: white;
-  font-weight: 600;
+  font-weight: 400;
   transition: all 0.3s ease;
   border-radius: 30px !important;
+  padding:5px !important;
+  
   
 }
 
