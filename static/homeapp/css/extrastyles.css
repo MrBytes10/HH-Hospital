@@ -2,7 +2,7 @@
     background-color: white;
     color:#0056b3;
     padding: 10px 0;
-    font-size: 14px;
+    font-size: 22px;
 }
 
 .logo-container {
@@ -11,30 +11,38 @@
 }
 
 .logo-container img {
-    height: 50px;
+    height: 70px;
     margin-right: 10px;
 }
 
 .hospital-name {
-    font-size: 18px;
-    font-weight: bold;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 27px;
+    font-weight: 700;
+    font-family:"Eras Bold ITC", "Arial Black", sans-serif;
+    text-transform: capitalize;
 }
 
 .hospital-tagline {
-    font-size: 12px;
-    font-style:italic;
-    font-weight: 200;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:Calibri, "Segoe UI", Arial, sans-serif;
 }
 
-.appointments {
-    text-align: right;
+.top-bar .appointments {
+    text-align: left; /* Center the text inside the appointments div */
+    font-size: 15px;
+    font-family: "Eras Demi ITC", sans-serif;
+}
+
+.col-lg-4.col-md-6 {
+  display: flex;
+  justify-content: flex-end; /* Align the appointments div to the right */
 }
 
 .navbar-light .navbar-nav .nav-link,
 .navbar-dark .navbar-nav .nav-link {
-    color: black !important;
+    color: white;
+    font-weight: 500;
     
 }
 
@@ -43,50 +51,63 @@
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link:focus {
     color: blue !important;
+    text-decoration: underline;
 }
 
 .navbar {
-    background-color:rgb(135, 228, 228);
+  font-family: Calibri, "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+    background-color:rgb(17, 164, 222, 0.9);
     block-size: auto;
-    color: black;
-}
-/*
-.navbar-nav .nav-link {
-
-    color: black;
-    font-size: 11px;
-    font-weight: bold;
+    color: white;
     text-transform: uppercase;
-    padding: 0.5rem 0.7rem;
-    transition: color 0.1s ease; /* This adds a smooth transition effect 
+    font-weight: 600;
 }
-*/
 
-/* Add this new rule for the hover effect */
-/*
-.navbar-nav .nav-link:hover {
-  color: blue; /* This is a blue color, you can adjust it as needed
-  }
-  */
 /*Sliders Text*/
+/* Common styles for all sliders */
+.slider-item {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.slider-text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
 .slider1 {
   background-color: rgba(40, 100, 100, 0.8) !important; /* Darker, more opaque background */
   color: white !important; /* Ensure text color is white */
+  padding: 5px; /* Add some padding */
+  position:absolute !important;
   font-weight: 600; /* Normal font weight */
-  position: relative; /* Change to relative positioning */
-  padding: 20px; /* Add some padding */
-  margin-top: 30px; /* Use margin instead of absolute positioning */
+  /*position: absolute; /* Changed to absolute positioning */
+  max-width: 600px;
+  width: 90%; /* Responsive width */
+  max-height: fit-content;
+  margin-bottom: 5% !important; /* Adjust this value to move it up or down */
+  left: 10%; /* Adjust this value to move it left or right */
+  
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+
+  /*
+  margin-top: 30px; /* Use margin instead of absolute positioning
   margin-left: 50px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
       /* Add these lines to set specific box dimensions */
-      width: 700px;  /* Or whatever width you prefer */
-      min-height: 300px; /* Or whatever height you prefer */
+      /*width: 700px;  /* Or whatever width you prefer */
+      /*min-height: 300px; /* Or whatever height you prefer */
 }
 
 /* Ensure headings are visible */
 .slider1 h1 {
   color: white !important;
-  font-weight: 700 !important; /* Bold */
+  font-weight: 400 !important; /* Bold */
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 /* Ensure paragraphs are visible */
@@ -101,71 +122,156 @@
 .slider2 {
   background-color: rgba(255, 255, 255, 0.8) !important; /* Transparent white background */
   color: black !important; /* Black text color */
-  font-weight: 600; /* Normal font weight */
-  position: relative; /* Change to relative positioning */
-  padding: 20px; /* Add some padding */
-  margin-top: 30px; /* Use margin instead of absolute positioning */
-  margin-left: 50px;
+    position: absolute; /* Change to relative positioning */
+  padding: 5px; /* Add some padding */
+    /* Add these lines to set specific box dimensions */
+  max-width: 600px;  /* Or whatever width you prefer */
+  min-height:fit-content; /* Or whatever height you prefer */
+  position: absolute;
+  margin-top: -43% !important; /* Adjust this value to move it up or down */
+  left: 60%;
+
   box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
-  /* Add these lines to set specific box dimensions */
-  width: 700px;  /* Or whatever width you prefer */
-  min-height: 300px; /* Or whatever height you prefer */
+
+ /* margin-top: 30px; /* Use margin instead of absolute positioning
+  margin-left: 50px; */
+
 }
 
 /* Ensure headings are visible */
 .slider2 h1 {
   color: black !important;
   font-weight: 700 !important; /* Bold */
+  font-size: 16px !important;
+  margin-bottom: 5px !important;
 }
 
 /* Ensure paragraphs are visible */
 .slider2 p {
   color: black !important;
   font-weight: 400 !important; /* Normal */
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 
 /*Slider3 css*/
 
 .slider3 {
-  background-color:rgba(130, 91, 91, 0.8) !important; /* Darker, more opaque background */
+  background-color:rgba(130, 91, 91, 0.9) !important; /* Darker, more opaque background */
   color: white !important; /* Ensure text color is white */
   font-weight: 600 !important; /* Normal font weight */
-  position: relative; /* Change to relative positioning */
-  padding: 20px; /* Add some padding */
-  margin-top: 30px; /* Use margin instead of absolute positioning */
-  margin-left: 50px;
+  position: absolute; /* Changed to absolute positioning */
+  padding: 10px; /* Add some padding */
+  max-width: 500px; /* width of the overlay box */
+  min-height: 300px; /* height of the overlay box */
+  margin-top: -43% !important; /* Adjust this value to move it up or down */
+  left: 10%;
+
+
+/*  margin-top: 30px; /* Use margin instead of absolute positioning
+  margin-left: 50px; */
   box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
       /* Add these lines to set specific box dimensions */
-      width: 700px;  /* Or whatever width you prefer */
-      min-height: 300px; /* Or whatever height you prefer */
+      
 }
 
 /* Ensure headings are visible */
 .slider3 h1 {
   color: white !important;
   font-weight: 700 !important; /* Bold */
+  font-size: 2.2rem;
+  margin-bottom: 5px;
 }
 
 /* Ensure paragraphs are visible */
 .slider3 p {
   color: white !important;
   font-weight: 400 !important; /* Normal */
+  font-size: 1rem;
+  line-height: 1.6;
+  padding-left: 20px;
 }
+
+/*sliders button styling*/
+/* Button styles */
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 30px !important;
+  
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+/*Overlay Images*/
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.slider-image {
+  width: 45%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
 
 /*Sliders Text CSS end*/
 
+/* Custom slide transitions for Owl Carousel */
+.owl-carousel .owl-item {
+  transform-style: preserve-3d;
+}
+
+.owl-carousel .owl-item.slideOutLeft {
+  animation: slideOutLeft 1s forwards;
+}
+
+.owl-carousel .owl-item.slideInRight {
+  animation: slideInRight 1s forwards;
+}
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
   /*second page from homepage*/
-/*section1 page2*/
+/*Section1 of page 2*/
 .alternative-treatment {
   padding: 50px 0;
-  background-color: #e6f3f7;
+  background-color: white;
+}
+
+.alternative-treatment .container {
+  height: 100%;
 }
 
 .alternative-treatment-row {
   display: flex;
   align-items: stretch;
+  min-height: 200px; /* Set a minimum height for the row */
 }
 
 .treatment-info-col, .treatment-image-col {
@@ -173,18 +279,26 @@
   flex-direction: column;
 }
 
+.treatment-info-col {
+  justify-content: center; /* Vertically center content */
+}
+
 .treatment-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
+  max-width: 90%; /* Limit text width for better readability */
   padding: 20px;
+}
+
+.treatment-image-col {
+  display: flex;
+  align-items: center; /* Vertically center the image */
+  justify-content: center; /* Horizontally center the image */
 }
 
 .treatment-image {
   object-fit: cover;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  max-height: 400px; /* Set a maximum height for the image */
 }
 
 @media (max-width: 767px) {
@@ -202,88 +316,219 @@
 }
 /*section1 ends here*/
 
+/*Page2 section2*/
+.integrative-medicine {
+  padding: 50px 0;
+  background-color: white;
+}
 
+.integrative-medicine .container {
+  height: 100%;
+}
 
-
-
-    .integrative-medicine {
-        padding: 50px 0;
-      }
-         
-      .integrative-medicine {
-        background-color: #e6f3f7;
-      }
-      
-      .treatment-info, .medicine-info {
-        padding: 20px;
-      }
-      
-      h2 {
-        color: #333;
-        margin-bottom: 20px;
-      }
-      
-      p {
-        color: #666;
-        margin-bottom: 20px;
-      }
-      
-      .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
-      
-      .btn-primary:hover {
-        background-color: #0056b3;
-      }
-      
-      .img-fluid {
-        max-width: 100%;
-        height: auto;
-      }
-
-  /* Page3 of the homepage*/
-.treat-root-cause {
+.medicine-row {
   display: flex;
-  flex-direction: column; /* Ensure container is full height */
+  align-items: stretch;
+  min-height: 400px; /* Set a minimum height for the row */
 }
 
-.container {
-  flex-grow: 1; /* Make container expand to fill available height */
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-}
-
-.col-md-6 {
-  flex: 1; /* Equal width for both columns */
-}
-
-.content-column {
+.image-column, .content-column {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Vertically center content */
-  align-items: flex-start; /* Align content to the left */
 }
 
 .image-column {
-  background-color: #e6f3f7; /* Temporary placeholder for image */
+  justify-content: center;
+  align-items: center;
 }
 
+.medicine-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 400px; /* Set a maximum height for the image */
+}
+
+.content-column {
+  justify-content: center;
+}
+
+.medicine-info {
+  max-width: 90%; /* Limit text width for better readability */
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .medicine-row {
+      flex-direction: column;
+  }
+
+  .image-column {
+      order: -1; /* Move image to top on mobile */
+  }
+
+  .medicine-image {
+      min-height: 200px;
+      margin-bottom: 20px;
+  }
+
+  .content-column {
+      text-align: center;
+  }
+
+  .medicine-info {
+      max-width: 100%;
+  }
+
+  .btn-primary {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+  }
+}
+  /* Page3 of the homepage*/
+  .treat-root-cause {
+    background-color: white;
+    padding: 50px 0; /* Add some vertical padding */
+}
+
+.treat-root-cause .container {
+    height: 100%;
+}
+
+.treat-root-cause .row {
+    display: flex;
+    align-items: stretch; /* Stretch columns to equal height */
+    min-height: 400px; /* Set a minimum height for the row */
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-column {
+    justify-content: center; /* Vertically center content */
+}
+
+.treatment-info {
+    max-width: 90%; /* Limit text width for better readability */
+}
+
+.image-column {
+    display: flex;
+    align-items: center; /* Vertically center the image */
+    justify-content: center; /* Horizontally center the image */
+}
+
+.image-column img {
+    object-fit: cover; /* Ensure image covers the entire space */
+    width: 100%;
+    height: 100%;
+    max-height: 400px; /* Set a maximum height for the image */
+}
+
+/*page3 section2*/
+.integrative-healthcare {
+  padding: 50px 0;
+  background-color:white; /* Light background color, adjust as needed */
+}
+
+.integrative-healthcare .container {
+  height: 100%;
+}
+
+.healthcare-row {
+  display: flex;
+  align-items: stretch;
+  min-height: 400px; /* Set a minimum height for the row */
+}
+
+.image-column, .content-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-column {
+  justify-content: center;
+  align-items: center;
+}
+
+.healthcare-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-height: 400px; /* Set a maximum height for the image */
+}
+
+.content-column {
+  justify-content: center;
+}
+
+.healthcare-info {
+  max-width: 90%; /* Limit text width for better readability */
+  padding: 20px;
+}
+
+.withTeam {
+  margin-bottom: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  .healthcare-row {
+      flex-direction: column;
+  }
+
+  .image-column {
+      order: -1; /* Move image to top on mobile */
+  }
+
+  .healthcare-image {
+      min-height: 300px;
+      margin-bottom: 20px;
+  }
+
+  .content-column {
+      text-align: center;
+  }
+
+  .healthcare-info {
+      max-width: 100%;
+  }
+}
 
 /*Useful links section*/
 /* Useful Links Section Styles */
 .useful-links {
   padding: 10px 10px;
-  background-color: #e6f3f7;
+  background-color: white;
 }
 
 .useful-links h2 {
