@@ -1,10 +1,9 @@
 .top-bar {
     background-color: white;
-    color:#0056b3;
-    padding: 10px 0;
-    font-size: 22px;
-        /* topbar height*/
-  height: 85px; /* or any specific pixel value */
+    color:rgba(50,95,142,255);
+    padding: 5px 0;    
+    /* topbar height*/
+    height: 80px; /* or any specific pixel value */
 }
 
 .logo-container {
@@ -13,13 +12,14 @@
 }
 
 .logo-container img {
-    height: 70px;
+    height: 60px;
     margin-right: 10px;
 }
 
 .hospital-name {
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 700;
+    font-stretch: condensed;
     font-family:"Eras Bold ITC", "Arial Black", sans-serif;
     text-transform: capitalize;
 }
@@ -32,7 +32,7 @@
 
 .top-bar .appointments {
     text-align: left; /* Center the text inside the appointments div */
-    font-size: 15px;
+    font-size: 14px;
     font-family: "Eras Demi ITC", sans-serif;
 }
 
@@ -59,14 +59,13 @@
 .navbar {
   font-family: Calibri, "Segoe UI", Arial, sans-serif;
   font-size: 13px;
-  background-color: rgb(74, 170, 165);
+  background-color: rgba(112,189,209,255); 
   block-size: auto;
   color: white;
   text-transform: uppercase;
-  font-weight: 600;
-  margin-bottom: 0px !important;
-    
-    /* Navbar width*/
+  font-weight: 600 !important;
+  margin-bottom: 0px !important;  
+    /* Navbar height*/
   height: 38px; /* or any specific pixel value */
 }
 
@@ -85,9 +84,11 @@
   align-items: center;
 }
 .slider1 {
-  background-color: rgba(40, 100, 100, 0.8) !important; /* Darker, more opaque background */
+  background-color: rgba(29,80,117,0.8) !important; /* Darker, more opaque background */
   color: white !important; /* Ensure text color is white */
-  padding: 3px !important; /* Add some padding */
+  font-family:Calibri, 'Trebuchet MS', sans-serif;
+  font-style:normal;
+  padding: 5px !important; /* Add some padding */
   position:absolute !important;
   font-weight: 600; /* Normal font weight */
   /*position: absolute; /* Changed to absolute positioning */
@@ -204,7 +205,7 @@
 /* Button styles */
 .btn-primary {
   background-color: #007bff;
-  border-color: #007bff;
+  border-color:#007bff;
   color: white;
   font-weight: 400;
   transition: all 0.3s ease;
@@ -218,6 +219,7 @@
   background-color: #0056b3;
   border-color: #0056b3;
 }
+
 /*Overlay Images*/
 .image-container {
   display: flex;
