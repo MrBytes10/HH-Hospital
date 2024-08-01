@@ -3,7 +3,7 @@
     color:rgba(50,95,142,255);
     padding: 5px 0;    
     /* topbar height*/
-    height: 80px; /* or any specific pixel value */
+    height: 77px; /* or any specific pixel value */
 }
 
 .logo-container {
@@ -12,8 +12,9 @@
 }
 
 .logo-container img {
-    height: 60px;
+    height: 62px;
     margin-right: 10px;
+    margin-bottom: 0;
 }
 
 .hospital-name {
@@ -22,6 +23,7 @@
     font-stretch: condensed;
     font-family:"Eras Bold ITC", "Arial Black", sans-serif;
     text-transform: capitalize;
+    
 }
 
 .hospital-tagline {
@@ -34,6 +36,9 @@
     text-align: left; /* Center the text inside the appointments div */
     font-size: 14px;
     font-family: "Eras Demi ITC", sans-serif;
+    line-height: 1.5;
+    margin-top: 2%;
+    height: 77px; 
 }
 
 .col-lg-4.col-md-6 {
@@ -57,24 +62,26 @@
 }
 
 .navbar {
-  font-family: Calibri, "Segoe UI", Arial, sans-serif;
+  font-family: Calibri, Arial, sans-serif;
   font-size: 13px;
   background-color: rgba(112,189,209,255); 
   block-size: auto;
   color: white;
   text-transform: uppercase;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
+  line-height: 1.1;
   margin-bottom: 0px !important;  
     /* Navbar height*/
   height: 38px; /* or any specific pixel value */
 }
 
-/*Sliders Text*/
+
+/*Sliders Scetion1*/
 /* Common styles for all sliders */
 .slider-item {
   position: relative;
-  height: 100vh;
-  background-size: cover;
+  height: 100vh; /* Make the section take the full viewport height */
+  background-size: 100vh;
   background-position: center;
 }
 
@@ -84,19 +91,22 @@
   align-items: center;
 }
 .slider1 {
+  
   background-color: rgba(29,80,117,0.8) !important; /* Darker, more opaque background */
   color: white !important; /* Ensure text color is white */
   font-family:Calibri, 'Trebuchet MS', sans-serif;
   font-style:normal;
   padding: 5px !important; /* Add some padding */
   position:absolute !important;
-  font-weight: 600; /* Normal font weight */
+  font-weight: 700; /* Normal font weight */
   /*position: absolute; /* Changed to absolute positioning */
   max-width: 600px;
   width: 90%; /* Responsive width */
   max-height: fit-content;
-  bottom: 20% !important; /* Adjust this value to move it up or down */
-  left: 10%; /* Adjust this value to move it left or right */
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  margin-top: -100px; /* Adjust this value to move it up or down */
   
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
 
@@ -221,17 +231,21 @@
 }
 
 /*Overlay Images*/
-.image-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
 
-.slider-image {
-  width: 45%;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
+    .image-gallery {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        display: flex;
+        
+        align-items: flex-end;
+
+        width: 350px;  /* Adjust as needed */
+        height: 80%;
+        margin-bottom: 30%;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        margin-right: 0%;
+    }
 
 
 /*Sliders Text CSS end*/
@@ -271,7 +285,7 @@
   /*second page from homepage*/
 /*Section1 of page 2*/
 .alternative-treatment {
-  padding: 50px 0;
+  padding: 20px 0;
   background-color: white;
 }
 
@@ -282,7 +296,7 @@
 .alternative-treatment-row {
   display: flex;
   align-items: stretch;
-  min-height: 200px; /* Set a minimum height for the row */
+  min-height: 100px; /* Set a minimum height for the row */
 }
 
 .treatment-info-col, .treatment-image-col {
@@ -309,7 +323,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  max-height: 400px; /* Set a maximum height for the image */
+  max-height: 300px; /* Set a maximum height for the image */
 }
 
 @media (max-width: 767px) {
@@ -329,7 +343,7 @@
 
 /*Page2 section2*/
 .integrative-medicine {
-  padding: 50px 0;
+  padding: 20px 0;
   background-color: white;
 }
 
@@ -340,7 +354,7 @@
 .medicine-row {
   display: flex;
   align-items: stretch;
-  min-height: 400px; /* Set a minimum height for the row */
+  min-height: 300px; /* Set a minimum height for the row */
 }
 
 .image-column, .content-column {
@@ -357,7 +371,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  max-height: 400px; /* Set a maximum height for the image */
+  max-height: 300px; /* Set a maximum height for the image */
 }
 
 .content-column {
@@ -436,7 +450,7 @@ p {
 .treat-root-cause .row {
     display: flex;
     align-items: stretch; /* Stretch columns to equal height */
-    min-height: 400px; /* Set a minimum height for the row */
+    min-height: 300px; /* Set a minimum height for the row */
 }
 
 .col-md-6 {
@@ -462,12 +476,12 @@ p {
     object-fit: cover; /* Ensure image covers the entire space */
     width: 100%;
     height: 100%;
-    max-height: 400px; /* Set a maximum height for the image */
+    max-height: 310px; /* Set a maximum height for the image */
 }
 
 /*page3 section2*/
 .integrative-healthcare {
-  padding: 50px 0;
+  padding: 20px 0;
   background-color:white; /* Light background color, adjust as needed */
 }
 
@@ -478,7 +492,7 @@ p {
 .healthcare-row {
   display: flex;
   align-items: stretch;
-  min-height: 400px; /* Set a minimum height for the row */
+  min-height: 300px; /* Set a minimum height for the row */
 }
 
 .image-column, .content-column {
@@ -492,9 +506,9 @@ p {
 }
 
 .healthcare-image {
-  object-fit: cover;
+  object-fit:cover;
   width: 100%;
-  height: 100%;
+  height: 90%;
   max-height: 400px; /* Set a maximum height for the image */
 }
 
@@ -503,7 +517,7 @@ p {
 }
 
 .healthcare-info {
-  max-width: 90%; /* Limit text width for better readability */
+  max-width: 91%; /* Limit text width for better readability */
   padding: 20px;
 }
 
@@ -535,7 +549,81 @@ p {
   }
 }
 
-/*Useful links section*/
+/*Testimonials section*/
+.testimonial-slider {
+    overflow: hidden;
+}
+
+.testimonial-card {
+    flex: 0 0 100%;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.client-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.client-info h3 {
+    margin: 0;
+}
+
+.client-info p {
+    margin: 0;
+    color: #666;
+}
+
+.testimonial-text {
+    font-size: 14px;
+    color: #333;
+}
+
+.rating {
+    color: #ffd700;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
+}
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .testimonial-card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .testimonial-card {
+        flex: 0 0 calc(33.333% - 20px);
+    }
+}
+  /*End of testimonials section*/
+
+
+
+
 /* Useful Links Section Styles */
 .useful-links {
   padding: 10px 10px;
@@ -552,7 +640,7 @@ p {
   background-color: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  padding: 20px;
+  padding: 10px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -579,7 +667,7 @@ p {
 .useful-links h4 {
   font-size: 1rem;
   color: #34495e;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .useful-links p {
@@ -700,11 +788,14 @@ p {
       background-color: #2a7d8c;
       color: white;
       padding: 20px 0;
+      line-height: 1.5;
+      height:fit-content;
   }
   
   .ftco-footer .footer-logo {
       max-width: 100px;
       margin-bottom: 15px;
+      line-height: 1.5;
   }
   
   .ftco-footer h3 {

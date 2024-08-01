@@ -254,6 +254,17 @@
                     end of overlay images-->
                 </div>
             </div>
+            <!-- Add this new div for the image gallery -->
+            <div class="image-gallery">
+                <img src="{% static 'homeapp/images/JAMA5copy2.png' %}" alt="JAMA" class="cover-1">
+                <!--
+                <img src="{% static 'homeapp/images/2.NATURE-CUT.png' %}" alt="Nature Medicine" class="cover-2">
+                <img src="{% static 'homeapp/images/3.JIM-CUT.jpeg' %}" alt="JICM" class="cover-3">
+                <img src="{% static 'homeapp/images/4.LANCET-CUT.jpg' %}" alt="The Lancet" class="cover-4">
+                <img src="{% static 'homeapp/images/5.BMJ-2.jpg' %}" alt="BMJ" class="cover-5">
+            -->
+
+            </div>
         </div>
 
     </section>
@@ -339,7 +350,7 @@
         <div class="container">
             <div class="row healthcare-row">
                 <div class="col-md-6 image-column">
-                    <img src="{% static 'homeapp/images/withTeam.jpg' %}" alt="Healthcare team"
+                    <img src="{% static 'homeapp/images/inte-health.jpg' %}" alt="Healthcare team"
                         class="img-fluid healthcare-image">
                 </div>
                 <div class="col-md-6 content-column">
@@ -775,122 +786,113 @@ End of Pricing Section-->
             </section>
         -->
 
-    <!--Testimonials Section -->
-    <section class="ftco-section testimony-section bg-light">
+    <!--testimonials 3333333333333333-->
+    <!--testimonials section...-->
+    <section class="testimonials" style="background-color: rgba(0,65,125,255); padding: 40px 0;">
         <div class="container">
-            <div class="row justify-content-center mb-1 pb-1">
-                <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2 class="mb-2">Testimonials</h2>
-                    <span class="subheading">
-                        <h3>SOME OF OUR CLIENTS STORIES</h3>
-                    </span>
+            <h2 style="color: white; text-align: center; margin-bottom: 30px;">What Our Clients Say</h2>
 
-                </div>
-            </div>
-            <div class="row justify-content-center ftco-animate">
-                <div class="col-md-8">
-                    <div class="carousel-testimony owl-carousel ftco-owl">
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5"
-                                    style="background-image: url({% static 'homeapp/images/karolina.jpg' %})">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">&quot I came to HH Non-Surgical Hospital after struggling with
-                                        chronic back pain for years. The non-invasive treatments and holistic approach
-                                        provided by the team were nothing short of miraculous. Within a few weeks, I
-                                        experienced significant relief and could return to my daily activities without
-                                        pain. I am forever grateful for the compassionate care and innovative therapies
-                                        at HH Hospital.
-                                        &quot</p>
-                                    <p class="name">— Sarah K.</p>
-                                    <span class="position">Nairobi, Kenya </span>
-                                </div>
+            <div class="testimonial-slider">
+                <div class="testimonial-track" style="display: flex; transition: transform 0.5s ease;">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="client-info">
+                            <img src="{% static 'homeapp/images/karolina.jpg' %}" alt="Sarah K.">
+                            <div>
+                                <h3>Sarah K.</h3>
+                                <p>Nairobi, Kenya</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5"
-                                    style="background-image: url({% static 'homeapp/images/james2.jpg' %})">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">"HH Non-Surgical Hospital truly exceeded my expectations. After a
-                                        severe sports injury, I was hesitant about undergoing surgery. The expert team
-                                        at HH offered a comprehensive rehabilitation program that not only accelerated
-                                        my recovery but also strengthened my body's natural healing mechanisms. I am now
-                                        back on the field, stronger than ever, thanks to their exceptional care."
-                                    </p>
-                                    <p class="name"> — James M.</p>
-                                    <span class="position">Mombasa, Kenya</span>
-                                </div>
+                        <p class="testimonial-text">"I came to HH Non-Surgical Hospital after struggling with chronic
+                            back pain for years. The non-invasive treatments and holistic approach provided by the team
+                            were nothing short of miraculous..."</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="client-info">
+                            <img src="{% static 'homeapp/images/james2.jpg' %}" alt="James M.">
+                            <div>
+                                <h3>James M.</h3>
+                                <p>Mombasa, Kenya</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5"
-                                    style="background-image: url({% static 'homeapp/images/lucy1.jpg' %})">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">"When I was diagnosed with a chronic condition, I feared a life of
-                                        constant medication and potential surgeries. HH Non-Surgical Hospital provided
-                                        an alternative that focused on the root cause of my issues rather than just the
-                                        symptoms. The integrative treatments and personalized care plan improved my
-                                        health remarkably. I highly recommend HH Hospital to anyone seeking a holistic
-                                        approach to healing."
-                                    </p>
-                                    <p class="name">— Lucy N.</p>
-                                    <span class="position">Nairobi, Kenya</span>
-                                </div>
+                        <p class="testimonial-text">"HH Non-Surgical Hospital truly exceeded my expectations. After a
+                            severe sports injury, I was hesitant about undergoing surgery. The expert team at HH offered
+                            a comprehensive rehabilitation program..."</p>
+                        <div class="rating">★★★★★</div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="client-info">
+                            <img src="{% static 'homeapp/images/lucy1.jpg' %}" alt="Lucy N.">
+                            <div>
+                                <h3>Lucy N.</h3>
+                                <p>Nairobi, Kenya</p>
                             </div>
                         </div>
-                        <!--
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5"
-                                    style="background-image: url({% static 'homeapp/images/person_1.jpg' %})">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Augastine Mulu</p>
-                                    <span class="position">Web Developer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap p-4 pb-5">
-                                <div class="user-img mb-5"
-                                    style="background-image: url({% static 'homeapp/images/person_1.jpg' %})">
-                                    <span class="quote d-flex align-items-center justify-content-center">
-                                        <i class="icon-quote-left"></i>
-                                    </span>
-                                </div>
-                                <div class="text text-center">
-                                    <p class="mb-5">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Van Persie</p>
-                                    <span class="position">System Analytics</span>
-                                </div>
-                            </div>
-                        </div>
-                        -->
+                        <p class="testimonial-text">"When I was diagnosed with a chronic condition, I feared a life of
+                            constant medication and potential surgeries. HH Non-Surgical Hospital provided an
+                            alternative that focused on the root cause of my issues..."</p>
+                        <div class="rating">★★★★★</div>
                     </div>
                 </div>
             </div>
+
+            <div class="slider-dots" style="text-align: center; margin-top: 20px;"></div>
         </div>
     </section>
+
+    <script>
+        const track = document.querySelector('.testimonial-track');
+        const cards = document.querySelectorAll('.testimonial-card');
+        const dotsContainer = document.querySelector('.slider-dots');
+        let currentIndex = 0;
+        let cardsPerView = 1;
+
+        function updateCardsPerView() {
+            if (window.innerWidth >= 1024) {
+                cardsPerView = 3;
+            } else if (window.innerWidth >= 768) {
+                cardsPerView = 2;
+            } else {
+                cardsPerView = 1;
+            }
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const totalSlides = Math.ceil(cards.length / cardsPerView);
+            track.style.width = `${100 * cards.length / cardsPerView}%`;
+            cards.forEach(card => card.style.width = `${100 / cardsPerView}%`);
+            track.style.transform = `translateX(-${currentIndex * (100 / totalSlides)}%)`;
+
+            // Update dots
+            dotsContainer.innerHTML = '';
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.createElement('span');
+                dot.classList.add('dot');
+                if (i === currentIndex) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    currentIndex = i;
+                    updateSlider();
+                });
+                dotsContainer.appendChild(dot);
+            }
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % Math.ceil(cards.length / cardsPerView);
+            updateSlider();
+        }
+
+        updateCardsPerView();
+        window.addEventListener('resize', updateCardsPerView);
+        setInterval(nextSlide, 10000); // Change slide every 10 seconds
+    </script>
+
 
     <!--Gallery Section 
     <section class="ftco-gallery">
@@ -1007,17 +1009,17 @@ End of Pricing Section-->
                     </div>
                 </div>
             </div>
-            <div class="row mt-1 mb-1>
-            <div class=" col-md-3">
-                <div class="info-card">
-                    <img src="{% static 'homeapp/images/nih_logo.jpg' %}"
-                        alt="National Center for Complementary and Integrative Health" class="img-fluid mb-3">
-                    <h3>U.S. Department of Health and Human Services</h3>
-                    <h4>National Center for Complementary and Integrative Health</h4>
-                    <a href="https://www.nccih.nih.gov/" target="_blank" rel="noopener noreferrer">Learn More</a>
+            <div class="row mt-1 mb-1">
+                <div class=" col-md-3">
+                    <div class="info-card">
+                        <img src="{% static 'homeapp/images/nih_logo.jpg' %}"
+                            alt="National Center for Complementary and Integrative Health" class="img-fluid mb-3">
+                        <h3>U.S. Department of Health and Human Services</h3>
+                        <h4>National Center for Complementary and Integrative Health</h4>
+                        <a href="https://www.nccih.nih.gov/" target="_blank" rel="noopener noreferrer">Learn More</a>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 

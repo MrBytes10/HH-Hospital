@@ -230,7 +230,7 @@ AOS.init({
    contentWayPoint();
 
 
-   // navigation
+   // navigation toggler for mobile responsiveness
    var OnePageNav = function() {
 	   $(".smoothscroll[href^='#'], #ftco-nav ul li a[href^='#']").on('click', function(e) {
 			e.preventDefault();
@@ -253,9 +253,31 @@ AOS.init({
 	   })
    };
    OnePageNav();
+//Testimonials2
+// scripts.js
+let currentIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+const totalTestimonials = testimonials.length;
+
+function showTestimonial(index) {
+    const testimonialSlide = document.querySelector('.testimonial-slide');
+    const newTransformValue = -index * 100;
+    testimonialSlide.style.transform = `translateX(${newTransformValue}%)`;
+}
+
+function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % totalTestimonials;
+    showTestimonial(currentIndex);
+}
+
+setInterval(nextTestimonial, 10000); // Change testimonial every 10 seconds
 
 
-   // magnific popup
+
+
+
+
+   // magnific popup for appointments
    $('.image-popup').magnificPopup({
    type: 'image',
    closeOnContentClick: true,
@@ -295,4 +317,6 @@ AOS.init({
 
 
 })(jQuery);
+
+
 
