@@ -13,7 +13,7 @@
     color:rgba(50,95,142,255);
     padding: 5px 0;    
     /* topbar height*/
-    height: 77px; /* or any specific pixel value */
+    height: 63px; /* or any specific pixel value */
 }
 
 .logo-container {
@@ -22,7 +22,7 @@
 }
 
 .logo-container img {
-    height: 62px;
+    height: 59px;
     margin-right: 10px;
     margin-bottom: 0;
 }
@@ -47,10 +47,10 @@
 .top-bar .appointments {
     text-align: left; /* Center the text inside the appointments div */
     font-size: 14px;
-    font-family: 'Eras Demi ITC', sans-serif;
-    line-height: 1.5;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.2;
     margin-top: 2%;
-    height: 77px; 
+    height: 72px; 
 }
 
 .col-lg-4.col-md-6 {
@@ -149,7 +149,7 @@
   font-size: 22px;
 }
 #slide1p strong{
-  font-size: 50px;
+  font-size: 54px;
 }
 /*Slider1 end*/
 
