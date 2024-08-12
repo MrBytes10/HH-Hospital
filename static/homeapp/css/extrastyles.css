@@ -228,7 +228,8 @@
 
 /*slide 4 Styling */
 .slider4 {
-  background-color: rgba(127,109,149,0.9);
+  /*background-color:rgba(102, 51, 153, 0.8); */
+  background-color: rgba(94, 54, 94, 0.8);
   color: white;
   font-weight: 400;
   font-style: italic;
