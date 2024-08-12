@@ -112,9 +112,7 @@
   left: 10%;
   transform: translateY(-50%);
   margin-top: -100px; /* Adjust this value to move it up or down */
-  
-  box-shadow: 0 0 10px rgba(221, 206, 206, 0.3);
-  /*
+   /*
   margin-top: 30px; /* Use margin instead of absolute positioning
   margin-left: 50px;
   box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
@@ -163,9 +161,7 @@
   margin-top: -43% !important; /* Adjust this value to move it up or down */
   left: 60%;
 
-  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
-
- /* margin-top: 30px; /* Use margin instead of absolute positioning
+   /* margin-top: 30px; /* Use margin instead of absolute positioning
   margin-left: 50px; */
 
 }
@@ -203,7 +199,6 @@
 
 /*  margin-top: 30px; /* Use margin instead of absolute positioning
   margin-left: 50px; */
-  box-shadow: 0 0 10px rgba(66, 48, 48, 0.3); /* Optional: adds depth */
       /* Add these lines to set specific box dimensions */
       
 }
@@ -239,7 +234,6 @@
   min-width: 400px;
   min-height: 300px;
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   margin-top: -43% !important; /* Adjust this value to move it up or down */
   left: 97%;
