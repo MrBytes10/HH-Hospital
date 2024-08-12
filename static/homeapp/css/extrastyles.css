@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .top-bar {
     background-color: white;
     color:rgba(50,95,142,255);
@@ -18,11 +20,14 @@
 }
 
 .hospital-name {
-    font-size: 23px;
-    font-weight: 700;
-    font-stretch: condensed;
+    font-size: 20.6px;
+    font-weight: 600;
+    font-stretch:extra-condensed;
     font-family:"Eras Bold ITC", "Arial Black", sans-serif;
     text-transform: capitalize;
+    display: inline-block; 
+    transform: scaleY(1.2); 
+    line-height: 1.2;
     
 }
 
@@ -81,9 +86,9 @@
 .slider-item {
   position: relative;
   height: 100vh; /* Make the section take the full viewport height */
-  background-size: 100vh;
   background-position: center;
-}
+  background-size: cover; /* or 'contain' based on your needs */
+ }
 
 .slider-text {
   height: 100%;
@@ -92,7 +97,7 @@
 }
 .slider1 {
   
-  background-color: rgba(29,80,117,0.8) !important; /* Darker, more opaque background */
+  /* background-color: rgba(29,80,117,0) !important; Darker, more opaque background */
   color: white !important; /* Ensure text color is white */
   font-family:Calibri, 'Trebuchet MS', sans-serif;
   font-style:normal;
@@ -108,8 +113,7 @@
   transform: translateY(-50%);
   margin-top: -100px; /* Adjust this value to move it up or down */
   
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-
+  box-shadow: 0 0 10px rgba(221, 206, 206, 0.3);
   /*
   margin-top: 30px; /* Use margin instead of absolute positioning
   margin-left: 50px;
@@ -128,10 +132,20 @@
 }
 
 /* Ensure paragraphs are visible */
-.slider1 p {
+#slide1p {
   color: white !important;
   font-weight: 400 !important; /* Normal */
-  font-size: 14px !important;
+  font-size: 30px !important;
+  font-family: "Poppins", sans-serif;
+  display: inline-block; 
+  transform: skew(-5deg); 
+  font-style: italic;
+}
+#slide1p span{
+  font-size: 22px;
+}
+#slide1p strong{
+  font-size: 50px;
 }
 /*Slider1 end*/
 
@@ -176,8 +190,8 @@
 /*Slider3 css*/
 
 .slider3 {
-  background-color:rgba(130, 91, 91, 0.9) !important; /* Darker, more opaque background */
-  color: white !important; /* Ensure text color is white */
+  background-color:rgba(130, 91, 91, 0) !important; /* Darker, more opaque background */
+  color:rgba(36,64,97,255) !important; /* Ensure text color is white */
   font-weight: 600 !important; /* Normal font weight */
   position: absolute; /* Changed to absolute positioning */
   padding: 10px; /* Add some padding */
@@ -189,14 +203,14 @@
 
 /*  margin-top: 30px; /* Use margin instead of absolute positioning
   margin-left: 50px; */
-  box-shadow: 0 0 10px rgba(0,0,0,0.3); /* Optional: adds depth */
+  box-shadow: 0 0 10px rgba(66, 48, 48, 0.3); /* Optional: adds depth */
       /* Add these lines to set specific box dimensions */
       
 }
 
 /* Ensure headings are visible */
 .slider3 h1 {
-  color: white !important;
+  color:rgba(36,64,97,255) !important;
   font-weight: 700 !important; /* Bold */
   font-size: 2.2rem;
   margin-bottom: 5px;
@@ -211,6 +225,43 @@
   padding-left: 20px;
 }
 
+
+/*slide 4 Styling */
+.slider4 {
+  background-color: rgba(127,109,149,0.9);
+  color: white;
+  font-weight: 400;
+  font-style: italic;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+  position: absolute;
+  padding: 5px;
+  min-width: 400px;
+  min-height: 300px;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-top: -43% !important; /* Adjust this value to move it up or down */
+  left: 97%;
+
+  
+}
+
+.slider4 h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  font-style: normal;
+}
+
+.slider4 p {
+  color: white;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
 /*sliders button styling*/
 /* Button styles */
 .btn-primary {
@@ -220,8 +271,8 @@
   font-weight: 400;
   transition: all 0.3s ease;
   border-radius: 30px !important;
-  padding:5px !important;
-  
+  padding:5px !important;  
+  font-style: normal;
   
 }
 
@@ -229,6 +280,8 @@
   background-color: #0056b3;
   border-color: #0056b3;
 }
+
+
 
 /*Overlay Images*/
 
