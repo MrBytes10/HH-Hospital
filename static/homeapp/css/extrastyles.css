@@ -849,7 +849,19 @@ p {
   .ftco-footer .footer-logo {
       max-width: 100px;
       margin-bottom: 15px;
-      line-height: 1.5;
+      line-height: 1.1;
+
+  }
+  #footer-logo-details{
+    margin-bottom: 15px;
+    line-height: 1.1;
+    font-size: medium;
+  }
+  #footer-logo-details img{
+    margin-bottom: 5px;
+    height: auto;
+    width:80px;
+    object-fit: cover;
   }
   
   .ftco-footer h3 {
